@@ -4,8 +4,6 @@ package main
 import (
     "fmt"
     "math"
-    //"strconv"
-    "reflect"
 )
 
 /*
@@ -56,12 +54,6 @@ func main() {
 	fmt.Println(fib2(38))
 	fmt.Println(fib3(38))
 	fmt.Println(fib4(38))
-	fmt.Printf("%g\n", math.Floor(4.4))
-	fmt.Printf("%g\n", math.Sqrt(25))
-	fmt.Printf("%g\n", math.Pow(2, 2))
-
-	fmt.Println(reflect.TypeOf(1))
-	fmt.Println(reflect.TypeOf(math.Pow(2, 2)))
 
 
 }
