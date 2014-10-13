@@ -4,6 +4,8 @@ package main
 import (
     "fmt"
     "math"
+    //"strconv"
+    "reflect"
 )
 
 /*
@@ -44,8 +46,8 @@ func fib3(n int) int{
     return ret;
 }
 
-func fib4(n float64) float64 {
-	return math.Floor(　math.Pow((1+math.Sqrt(5))/2, n) / math.Sqrt(5) + 1/2　)
+func fib4(n float64) int {
+	return int(math.Floor(math.Pow((1+math.Sqrt(5))/2, n) / math.Sqrt(5) + 1/2))
 }
 
 
@@ -54,8 +56,6 @@ func main() {
 	fmt.Println(fib2(38))
 	fmt.Println(fib3(38))
 	fmt.Println(fib4(38))
-
-
 }
 
 
