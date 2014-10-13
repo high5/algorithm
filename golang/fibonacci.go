@@ -13,7 +13,6 @@ import (
 * F(1) = 1
 * F(n) = F(n-1) + F(n-2) 
 */
-
 func fib1(n int) int {
 	if n <= 1 {
 		return n
@@ -48,14 +47,9 @@ func fib3(n int) int{
 }
 
 func fib4(n float64) float64 {
-	return math.Floor(math.Pow((1+math.Sqrt(5))/2, n) / math.Sqrt(5) + 1/2)
+	return math.Floor(　math.Pow((1+math.Sqrt(5))/2, n) / math.Sqrt(5) + 1/2　)
 }
 
-/*
-function fib4($n){
-	return floor( pow((1+sqrt(5))/2, $n) / sqrt(5) + 1/2 );
-}お伺いさせていただきます。お伺いさせていただきます。
-*/
 
 func main() {
 	fmt.Println(fib1(38))
