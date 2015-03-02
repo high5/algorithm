@@ -1,17 +1,20 @@
 <?php
 
+
+
 require_once('Bench.php');
 
 /*
+* test
 * F(0) = 0
 * F(1) = 1
-* F(n) = F(n-1) + F(n-2) 
+* F(n) = F(n-1) + F(n-2)
 */
 function fib1 ($n) {
 	if ($n <= 1) {
 		return $n;
 	}
-	return fib1($n-1) + fib1($n-2);  
+	return fib1($n-1) + fib1($n-2);
 }
 
 function fib2($n) {
@@ -22,8 +25,8 @@ function fib2($n) {
 }
 
 function fib2_sub($a, $b, $c) {
-	if ($c <= 2){ 
-		return $a; 
+	if ($c <= 2){
+		return $a;
 	}
     return fib2_sub($a+$b, $a, $c-1);
 }
@@ -45,7 +48,7 @@ function fib4($n){
 }
 
 
-$bench = new Bench(); 
+$bench = new Bench();
 $bench->run();
 echo fib1(38) . PHP_EOL;
 echo "fib1(38) time:" . $bench->stop()->result() . PHP_EOL;
@@ -64,6 +67,6 @@ echo fib4(38) . PHP_EOL;
 
 
 
-	
+
 
 ?>

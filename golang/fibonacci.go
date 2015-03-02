@@ -9,9 +9,10 @@ import (
 )
 
 /*
+* detail
 * F(0) = 0
 * F(1) = 1
-* F(n) = F(n-1) + F(n-2) 
+* F(n) = F(n-1) + F(n-2)
 */
 func fib1(n int) int {
 	if n <= 1 {
@@ -31,7 +32,7 @@ func fib2_sub(a, b, c int) int {
 	if c <= 2 {
 		return a
 	}
-	return fib2_sub(a+b, a, c-1) 
+	return fib2_sub(a+b, a, c-1)
 }
 
 func fib3(n int) int{
@@ -57,15 +58,3 @@ func main() {
 	fmt.Println(fib3(38))
 	fmt.Println(fib4(38))
 }
-
-
-
-
-
-
-
-
-
-
-
-
